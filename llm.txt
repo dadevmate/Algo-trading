@@ -1,0 +1,26 @@
+Core Commands:
+
+ollama run <model>: Downloads (if necessary) and starts a specified model, making it ready for interaction. 
+ollama pull <model>: Downloads a model from the Ollama library without running it. 
+ollama list: Displays all locally available models. 
+ollama rm <model>: Removes a model from your system to free up space. 
+ollama create <new_model> -f <Modelfile>: Creates a new model based on a Modelfile for customization. 
+ollama show <model>: Displays information about a specific model, including its configuration and release details. 
+ollama serve: Starts the Ollama service, making it accessible via an API. 
+ollama train <input_model> <data_file> <output_model>: Finetune an ollama model on custom data
+
+Other useful commands:
+ollama stop <model>: Stops a currently running model. 
+ollama ps: Lists currently running models. 
+ollama cp <model_name> <new_name>: Copies a model with a new name. 
+ollama push <model_name>: Uploads a model to the Ollama registry. 
+ollama help: Displays help information for any Ollama command. 
+ollama show --modelfile <model_name>: Displays the Modelfile of a given model. 
+ollama run <model> --help: Displays detailed usage information for the run command. 
+
+
+Tips for using Ollama:
+Use Ctrl+C to abort downloads during pull or run. 
+Stopping unused models is crucial to conserve memory and GPU resources. 
+Ollama can be integrated with other tools like Open WebUI for a graphical interface. 
+You can configure Ollama for optimal performance by adjusting settings like the number of threads and enabling GPU acceleration. 
